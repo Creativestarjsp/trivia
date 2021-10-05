@@ -14,7 +14,7 @@ function App() {
     if(answer.toLowerCase() === ans.toLowerCase()){
       alert('Correct answer')
     }else{
-      alert('Correct anser is:   ' + ans);
+      alert('Incorrect Input , Correct anser is:   ' + ans);
     }
     
     // event.preventDefault();
@@ -52,6 +52,7 @@ React.useEffect(() => {
         </label>
 
         <input className="btn-primary " type="submit" value="Submit" />
+        <p>{ans}</p>
       </form>
     </div>
        
